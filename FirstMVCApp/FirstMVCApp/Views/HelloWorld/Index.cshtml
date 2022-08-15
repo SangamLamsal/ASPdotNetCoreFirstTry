@@ -1,0 +1,18 @@
+﻿@model List<FirstMVCApp.Models.DogViewModel>
+
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>This is my first ASP .NET CORE page</h1>
+<p>Welcome to the world of programming.</p>
+<ul>
+
+    @foreach (var dog in Model)
+    {
+        <li>@dog.Name (@dog.Age)</li>
+    }
+</ul>
+@*<h4>The name of the dog is @Model.Name</h4>*@
+@*<h4>@Model.Name is @Model.Age years old.</h4>*@
